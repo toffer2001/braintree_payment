@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Header, Segment, Input, Label, Divider, Icon } from 'semantic-ui-react';
+import BraintreeDrop from './BraintreeDrop';
 
 class Home extends Component {
   state = { amount: 150.5 };
@@ -17,6 +18,7 @@ class Home extends Component {
         <br />
         <Input value={amount} disabled style={{ fontSize: '18px' }} />
         <Divider />
+        <BraintreeDrop amount={amount} />
       </Segment>
     );
   }
